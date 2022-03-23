@@ -1,0 +1,499 @@
+<html>
+<head>
+  <title>::: Grid Painter :::</title>
+  <style></style>
+  
+<!--  gridpainter custom css/js -->
+   <link rel="stylesheet" type="text/css" href="style.css">
+  
+   <script src="gridpaintertools.js"></script> 
+  
+ <link rel="stylesheet" type="text/css" href=" https://cdnjs.cloudflare.com/ajax/libs/grd/1.4.0/grd.css ">  
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> 
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script> 
+  
+  
+</head>
+<body id="body-color"><a name="top"></a>
+  
+  <iframe src="nexus.html" frameborder="0"></iframe>
+  
+  <nav id="nav-menu">
+    <div class="tabs grid-row">
+      <li data-tab="tab-1"><a href="#top">sq1</a></li>
+      <li data-tab="tab-2"><a href="#top">sq2</a></li>
+      <li data-tab="tab-3"><a href="#top">sq3</a></li>
+      <li data-tab="tab-4"><a href="#top">sq4</a></li>
+    </div>
+    <div class="tabs grid-row">
+      <li data-tab="tab-5"><a href="#top">sq5</a></li>
+      <li data-tab="tab-6"><a href="#top">sq6</a></li>
+      <li data-tab="tab-7"><a href="#top">sq7</a></li>
+      <li data-tab="tab-8"><a href="#top">sq8</a></li>
+    </div>
+    <div class="tabs grid-row">
+      <li data-tab="tab-9"><a href="#top">sq9</a></li>
+      <li data-tab="tab-10"><a href="#top">sq10</a></li>
+      <li data-tab="tab-11"><a href="#top">sq11</a></li>
+      <li data-tab="tab-12"><a href="#top">sq12</a></li>
+    </div>
+    <div class="tabs grid-row">
+      <li data-tab="tab-13"><a href="#top">sq13</a></li>
+      <li data-tab="tab-14"><a href="#top">sq14</a></li>
+      <li data-tab="tab-15"><a href="#top">sq15</a></li>
+      <li data-tab="tab-16"><a href="#top">sq16</a></li>
+    </div>
+    
+ <div class="tabs helpsection">
+   <li data-tab="tab-0"><a href="#top">Help</a></li>
+   
+<!--   
+  !--Controls for CSS filters via range input-->
+<div class="sliders">
+  <form id="imageEditor">
+    <span>Background Controls</span>
+    <p>
+      <label for="huerBG">Background Color</label>
+      <input id="huerBG" name="huer" type="range" min="0" max="360" value="000">
+    </p>
+    <hR>
+    <span>Image Controls</span>
+    <p>
+      <label for="gs">Grayscale</label>
+      <input id="gs" name="gs" type="range" min="0" max="100" value="0">
+    </p>
+
+
+    <p>
+      <label for="br">Exposure</label>
+      <input id="br" name="br" type="range" min="0" max="200" value="100">
+    </p>
+
+    <p>
+      <label for="ct">Contrast</label>
+      <input id="ct" name="ct" type="range" min="0" max="200" value="100">
+    </p>
+
+    <p>
+      <label for="huer">Hue Rotate</label>
+      <input id="huer" name="huer" type="range" min="0" max="360" value="0">
+    </p>
+
+  
+
+    <p>
+      <label for="invert">Invert</label>
+      <input id="invert" name="invert" type="range" min="0" max="100" value="0">
+    </p>
+
+    <p>
+      <label for="saturate">Saturate</label>
+      <input id="saturate" name="saturate" type="range" min="0" max="500" value="100">
+    </p>
+
+
+    <input type="reset" form="imageEditor" id="reset" value="Reset" />
+
+  </form>
+</div>	
+
+</div>
+  </nav>
+  
+  
+  
+  
+
+  <div id="container">    
+    <div id="tab-0" class="tab-content content-0 current"><p><span>Hi!</span> New to painting? Experienced? looking for more challenges or just want to improve? 
+     <BR><BR>
+     Welcome to <span>Grid Painter!</span>  The image on the right is a painting you can recreate!
+      <BR><BR>
+       Here's the steps you can take to create the painting on the right:
+      <ol>
+        <li> Set up your canvas, </li> 
+        <li> Grab some paints, </li>
+        <li> Click around in the right image, </li>
+        <li> Start Painting</li>
+        <li> Work through a square at a time! </li>
+         
+        <li> Finish YOUR masterpiece!</li>
+      </ol>        
+      </p></div>
+    <div id="tab-1" class="tab-content content-1">
+      
+      <div class="img-container">
+				<div class="img-cell img-cell-nav"></div>        
+				<div class="img-cell img-cell-nav"></div>
+				<div class="img-cell img-cell-nav"></div>		
+        
+				<div class="img-cell img-cell-nav"></div>
+				<!-- should change with the page # -->
+				<div class="img-cell img-cell-image"></div>
+				<div class="img-cell img-cell-nav active" data-tab="tab-2"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/right.png"></div>	
+        
+				<div class="img-cell img-cell-nav"></div>
+				<div class="img-cell img-cell-nav active" data-tab="tab-5"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/bot.png"></div>
+        
+				<div class="img-cell img-cell-nav active" data-tab="tab-6"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/botright.png"></div>
+
+			</div>
+      
+    </div>
+    <div id="tab-2" class="tab-content content-2">
+      <div class="img-container">
+
+							
+				<div class="img-cell img-cell-nav"></div>							
+				<div class="img-cell img-cell-nav"></div>							
+				<div class="img-cell img-cell-nav"></div>
+
+				<div class="img-cell img-cell-nav active" data-tab="tab-1"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/left.png"></a></div>
+				<!-- should change with the page # -->
+				<div class="img-cell img-cell-image"></div><!-- should change with the page # -->
+				<div class="img-cell img-cell-nav active" data-tab="tab-3"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/right.png"></div>
+
+				<div class="img-cell img-cell-nav active" data-tab="tab-5"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/botleft.png"></div>
+				<div class="img-cell img-cell-nav active" data-tab="tab-6"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/bot.png"></div>
+				<div class="img-cell img-cell-nav active" data-tab="tab-7"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/botright.png"></div>
+
+			</div>
+    </div>
+    <div id="tab-3" class="tab-content content-3">
+      	
+			<div class="img-container">
+
+							
+				<div class="img-cell img-cell-nav"></div>						
+				<div class="img-cell img-cell-nav"></div>							
+				<div class="img-cell img-cell-nav"></div>	
+				
+
+				<div class="img-cell img-cell-nav active" data-tab="tab-2"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/left.png"></a></div>
+
+				<!-- should change with the page # -->
+				<div class="img-cell img-cell-image"></div>
+
+				<div class="img-cell img-cell-nav active" data-tab="tab-4"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/right.png"></div>
+
+				<div class="img-cell img-cell-nav active" data-tab="tab-6"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/botleft.png"></div>
+				<div class="img-cell img-cell-nav active" data-tab="tab-7"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/bot.png"></div>
+				<div class="img-cell img-cell-nav active" data-tab="tab-8"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/botright.png"></div>
+
+			</div>
+    </div>
+    <div id="tab-4" class="tab-content content-4">
+      	
+			<div class="img-container">
+
+							
+				<div class="img-cell img-cell-nav"></div>							
+				<div class="img-cell img-cell-nav"></div>							
+				<div class="img-cell img-cell-nav"></div>			
+
+				<div class="img-cell img-cell-nav active" data-tab="tab-3"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/left.png"></a></div>
+
+				<!-- should change with the page # -->
+				<div class="img-cell img-cell-image"></div>						
+				<div class="img-cell img-cell-nav"></div>
+
+				<div class="img-cell img-cell-nav active" data-tab="tab-7"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/botleft.png"></div>
+				<div class="img-cell img-cell-nav active" data-tab="tab-8"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/bot.png"></div>							
+				<div class="img-cell img-cell-nav"></div>
+
+			</div>
+    </div>
+    <div id="tab-5" class="tab-content content-5">
+      	
+			<div class="img-container">
+
+							
+				<div class="img-cell img-cell-nav"></div>
+				<div class="img-cell img-cell-nav active" data-tab="tab-1"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/top.png"></div>
+				<div class="img-cell img-cell-nav active" data-tab="tab-2"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/topright.png"></div>			
+				
+
+				<div class="img-cell img-cell-nav"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/left.png"></div>
+
+				<!-- should change with the page # -->
+				<div class="img-cell img-cell-image"></div>
+
+				<div class="img-cell img-cell-nav active" data-tab="tab-6"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/right.png"></div>
+
+							
+				<div class="img-cell img-cell-nav"></div>
+				
+				<div class="img-cell img-cell-nav active" data-tab="tab-9"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/bot.png"></div>
+				<div class="img-cell img-cell-nav active" data-tab="tab-10"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/botright.png"></div>
+
+			</div>
+    </div>
+    <div id="tab-6" class="tab-content content-6">
+      
+			<div class="img-container">
+
+				<div class="img-cell img-cell-nav active" data-tab="tab-1"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/topleft.png"></div>
+				<div class="img-cell img-cell-nav active" data-tab="tab-2"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/top.png"></div>
+				<div class="img-cell img-cell-nav active" data-tab="tab-3"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/topright.png"></div>
+								
+
+				<div class="img-cell img-cell-nav active" data-tab="tab-5"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/left.png"></div>
+				<!-- should change with the page # -->
+				<div class="img-cell img-cell-image"></div>
+        
+        
+				<div class="img-cell img-cell-nav active" data-tab="tab-2"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/right.png"></div>
+
+				<div class="img-cell img-cell-nav active" data-tab="tab-9"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/botleft.png"></div>
+				
+				<div class="img-cell img-cell-nav active" data-tab="tab-10"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/bot.png"></div>
+				<div class="img-cell img-cell-nav active" data-tab="tab-11"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/botright.png"></div>
+
+			</div>
+    </div>
+    <div id="tab-7" class="tab-content  content-7">
+      	
+			<div class="img-container">
+
+				<div class="img-cell img-cell-nav active" data-tab="tab-2"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/topleft.png"></div>
+				<div class="img-cell img-cell-nav active" data-tab="tab-3"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/top.png"></div>
+				<div class="img-cell img-cell-nav active" data-tab="tab-4"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/topright.png"></div>
+				
+				
+				<div class="img-cell img-cell-nav active" data-tab="tab-6"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/left.png"></div>
+
+				<!-- should change with the page # -->
+				<div class="img-cell img-cell-image"></div>
+
+				<div class="img-cell img-cell-nav active" data-tab="tab-8"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/right.png"></div>
+
+				<div class="img-cell img-cell-nav active" data-tab="tab-10"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/botleft.png"></div>			
+				<div class="img-cell img-cell-nav active" data-tab="tab-11"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/bot.png"></div>
+				<div class="img-cell img-cell-nav active" data-tab="tab-12"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/botright.png"></div>
+
+			</div>
+    </div>
+    <div id="tab-8" class="tab-content content-8">
+      
+			<div class="img-container">
+
+				<div class="img-cell img-cell-nav active" data-tab="tab-3"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/topleft.png"></div>
+				<div class="img-cell img-cell-nav active" data-tab="tab-4"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/top.png"></div>
+				<div class="img-cell img-cell-nav"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/topright.png"></div>
+				
+				
+				<div class="img-cell img-cell-nav active" data-tab="tab-7"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/left.png"></div>
+
+				<!-- should change with the page # -->
+				<div class="img-cell img-cell-image active"></div>
+
+				<div class="img-cell img-cell-nav" data-tab="tab-2"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/right.png"></div>
+
+				<div class="img-cell img-cell-nav active" data-tab="tab-11"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/botleft.png"></div>			
+				<div class="img-cell img-cell-nav active" data-tab="tab-12"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/bot.png"></div>
+							
+				<div class="img-cell img-cell-nav"></div>
+
+			</div>
+    </div>
+    <div id="tab-9" class="tab-content content-9">
+      
+			<div class="img-container">
+
+							
+				<div class="img-cell img-cell-nav"></div>
+				<div class="img-cell img-cell-nav active" data-tab="tab-5"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/top.png"></div>
+				<div class="img-cell img-cell-nav active" data-tab="tab-6"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/topright.png"></div>
+							
+
+							
+				<div class="img-cell img-cell-nav"></div>
+
+				<!-- should change with the page # -->
+				<div class="img-cell img-cell-image active"></div>
+
+				<div class="img-cell img-cell-nav active" data-tab="tab-10"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/right.png"></div>
+
+							
+				<div class="img-cell img-cell-nav"></div>		
+				<div class="img-cell img-cell-nav active" data-tab="tab-13"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/bot.png"></div>
+				<div class="img-cell img-cell-nav active" data-tab="tab-14"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/botright.png"></div>
+
+			</div>
+    </div>
+    <div id="tab-10" class="tab-content content-10">
+      
+			<div class="img-container">
+
+				<div class="img-cell img-cell-nav active" data-tab="tab-5"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/topleft.png"></div>
+				<div class="img-cell img-cell-nav active" data-tab="tab-6"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/top.png"></div>
+				<div class="img-cell img-cell-nav active" data-tab="tab-7"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/topright.png"></div>
+				
+				
+
+				<div class="img-cell img-cell-nav active" data-tab="tab-9"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/left.png"></div>
+
+				<!-- should change with the page # -->
+				<div class="img-cell img-cell-image active"></div>
+
+				<div class="img-cell img-cell-nav active" data-tab="tab-11"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/right.png"></div>
+
+				<div class="img-cell img-cell-nav active" data-tab="tab-13"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/botleft.png"></div>			
+				<div class="img-cell img-cell-nav active" data-tab="tab-14"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/bot.png"></div>
+				<div class="img-cell img-cell-nav active" data-tab="tab-15"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/botright.png"></div>
+
+			</div>
+    </div>
+    <div id="tab-11" class="tab-content  content-11">
+      
+			<div class="img-container">
+
+				<div class="img-cell img-cell-nav active" data-tab="tab-6"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/topleft.png"></div>
+				<div class="img-cell img-cell-nav active" data-tab="tab-7"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/top.png"></div>
+				<div class="img-cell img-cell-nav active" data-tab="tab-8"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/topright.png"></div>
+				
+				
+
+				<div class="img-cell img-cell-nav active" data-tab="tab-10"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/left.png"></div>
+
+				<!-- should change with the page # -->
+				<div class="img-cell img-cell-image active"></div>
+
+				<div class="img-cell img-cell-nav active" data-tab="tab-12"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/right.png"></div>
+
+				<div class="img-cell img-cell-nav active" data-tab="tab-14"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/botleft.png"></div>			
+				<div class="img-cell img-cell-nav active" data-tab="tab-15"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/bot.png"></div>
+				<div class="img-cell img-cell-nav active" data-tab="tab-16"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/botright.png"></div>
+
+			</div>
+    </div>
+    <div id="tab-12" class="tab-content content-12">
+      
+      			<div class="img-container">
+
+				<div class="img-cell img-cell-nav active" data-tab="tab-7"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/topleft.png"></div>
+				<div class="img-cell img-cell-nav active" data-tab="tab-8"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/top.png"></div>
+				<div class="img-cell img-cell-nav"></div>				
+
+				<div class="img-cell img-cell-nav active" data-tab="tab-2"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/left.png"></div>
+				<!-- should change with the page # -->
+				<div class="img-cell img-cell-image active"></div>
+				<div class="img-cell img-cell-nav"></div>
+				
+				<div class="img-cell img-cell-nav active" data-tab="tab-15"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/botleft.png"></div>			
+				<div class="img-cell img-cell-nav active" data-tab="tab-16"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/bot.png"></div>
+				<div class="img-cell img-cell-nav"></div>
+			</div>
+      
+    </div>
+    <div id="tab-13" class="tab-content content-13">
+      	
+			<div class="img-container">
+
+				<div class="img-cell img-cell-nav"></div>
+				<div class="img-cell img-cell-nav active" data-tab="tab-9"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/top.png"></div>
+				<div class="img-cell img-cell-nav active" data-tab="tab-10"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/topright.png"></div>				
+
+				<div class="img-cell img-cell-nav"></div>				
+				<!-- should change with the page # -->
+				<div class="img-cell img-cell-image"></div>
+
+				<div class="img-cell img-cell-nav active" data-tab="tab-2"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/right.png"></div>
+
+				<div class="img-cell img-cell-nav"></div>			
+				<div class="img-cell img-cell-nav"></div>
+				<div class="img-cell img-cell-nav"></div>
+
+			</div>
+    </div>
+    <div id="tab-14" class="tab-content content-14">
+      	
+			<div class="img-container">
+
+				<div class="img-cell img-cell-nav active" data-tab="tab-9"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/topleft.png"></div>
+				<div class="img-cell img-cell-nav active" data-tab="tab-10"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/top.png"></div>
+				<div class="img-cell img-cell-nav active" data-tab="tab-11"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/topright.png"></div>
+				
+				
+				<div class="img-cell img-cell-nav active" data-tab="tab-13"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/left.png"></div>
+
+				<!-- should change with the page # -->
+				<div class="img-cell img-cell-image"></div>
+
+				<div class="img-cell img-cell-nav active" data-tab="tab-15"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/right.png"></div>
+
+				<div class="img-cell img-cell-nav"></div>			
+				<div class="img-cell img-cell-nav"></div>
+				<div class="img-cell img-cell-nav"></div>
+
+			</div>
+    </div>
+    <div id="tab-15" class="tab-content  content-15">
+      	<div class="img-container">
+
+				<div class="img-cell img-cell-nav active" data-tab="tab-10"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/topleft.png"></div>
+				<div class="img-cell img-cell-nav active" data-tab="tab-11"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/top.png"></div>
+				<div class="img-cell img-cell-nav active" data-tab="tab-12"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/topright.png"></div>
+				
+				
+
+				<div class="img-cell img-cell-nav active" data-tab="tab-14"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/left.png"></div>
+
+				<!-- should change with the page # -->
+				<div class="img-cell img-cell-image active"></div>
+
+				<div class="img-cell img-cell-nav active" data-tab="tab-16"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/right.png"></div>
+
+							
+				<div class="img-cell img-cell-nav"></div>							
+				<div class="img-cell img-cell-nav"></div>							
+				<div class="img-cell img-cell-nav"></div>
+
+			</div>
+    </div>
+    <div id="tab-16" class="tab-content content-16">
+      
+			<div class="img-container">
+
+				<div class="img-cell img-cell-nav active" data-tab="tab-11"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/topleft.png"></div>
+				<div class="img-cell img-cell-nav active" data-tab="tab-12"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/top.png"></div>
+							
+				<div class="img-cell img-cell-nav"></div>
+				
+				
+
+				<div class="img-cell img-cell-nav active" data-tab="tab-15"><img src="https://raw.githubusercontent.com/calvinmorett/b16/main/left.png"></div>
+
+				<!-- should change with the page # -->
+				<div class="img-cell img-cell-image"></div>
+
+							
+				<div class="img-cell img-cell-nav"></div>						
+				<div class="img-cell img-cell-nav"></div>						
+				<div class="img-cell img-cell-nav"></div>							
+				<div class="img-cell img-cell-nav"></div>
+
+			</div>
+    </div>
+
+    <!--
+<div class="sidebar-mid">
+work left side images right side filter by //
+  <BR>
+    footer that follows the page
+    </div>
+  
+  <div class="sidebar-bot">
+    ---right sidebar start----
+  <BR>
+navigation menu <BR>
+branding logo only // 
+<BR>---right sidebar end----<BR>
+    </div>-->
+  </div>
+</body>
+
+</html>
+
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:700|Work+Sans:100,200,300" rel="stylesheet">

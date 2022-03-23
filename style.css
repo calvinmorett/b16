@@ -1,0 +1,509 @@
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  background: #51585c;
+  background: #000;
+}
+#body-color iframe {
+width:250px;
+height:50px;
+border:0px solid red;
+}
+body {
+  margin: 0;
+  padding: 0;
+  color: #333;
+  font-size: 100%;
+  font-weight: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Work Sans", Helvetica, Arial, Sans-Serif, sans-serif;
+}
+#container {
+  height: auto;
+  width: calc(100vw - 12.5%);
+  margin: 0;
+  padding: 0;
+  font-size: 4vw;
+}
+
+html,
+body,
+.container {
+  height: 100vh;
+}
+#container p {
+  max-width: 90%;
+}
+#nav-menu li,
+#nav-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#nav-menu {
+  z-index: 2;
+  font-family: "PT Sans", sans-serif;
+  width: 200px;
+  margin: 0;
+  top: 0;
+  right: 0;
+  position: fixed;
+  overflow: hidden;
+  // float: right;
+  height: 100%;
+  background: #111;
+  // min-width: 16%;
+}
+// #nav-menu a:link,
+// #nav-menu a:visited {
+//   font-weight: bold;
+//   // vertical-align: middle;
+//   // min-height: 20px;
+//   // padding: 2em;
+//   // margin: 0 auto;
+//   display: inline-block;
+//   transition: color 0.25s ease;
+//   letter-spacing: 0.123rem;
+//   text-align: center;
+//   text-decoration: none;
+//   background: #000;
+//   color: #fff;
+//   text-transform: uppercase;
+//   font-size: 0.8em;
+//   // width: 25vw;
+//   text-align: left;
+//   // float: left;
+// }
+// #nav-menu a:hover,
+// #nav-menu a:active {
+//   color: #000;
+//   background: #fff;
+// }
+.tab-content {
+  display: none;
+  padding: .25em 2em;
+  opacity: 0;
+}
+.tab-content.current {
+  display: inherit;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+
+.content-0,
+.content-1,
+.content-2,
+.content-3,
+.content-4,
+.content-5,
+.content-6,
+.content-7,
+.content-8,
+.content-9,
+.content-10,
+.content-11,
+.content-12,
+.content-13,
+.content-14,
+.content-15,
+.content-16 {
+  min-height: 100vh;
+  top: 0;
+  position: relative;
+  margin: 0;
+  margin-right: 0;
+  font-weight: 200;
+  background: transparent;
+  color: #fff;
+}
+.content-0{padding:2em;}
+span{  font-weight: 400;}
+
+.grid-row {
+  display: grid;
+  grid-column-gap: 0;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+.grid-row li,
+.grid-row li a {
+  list-style: none;
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  opacity: 0.5;
+  color: transparent;
+  filter: grayscale(1);
+}
+.grid-row li.current,
+.grid-row li.current a {
+  filter: grayscale(0);
+  position: relative;
+  box-shadow: inset 0 0 0 3px red;
+  opacity: 1;
+  color: transparent;
+}
+.grid-row li.current:before a {
+  filter: grayscale(1);
+  content: "";
+  opacity: 1;
+  box-shadow: inset 0 0 0 4px red;
+  position: absolute;
+  width: 50px;
+  top: 0;
+  left: 0;
+  height: 50px;
+  z-index: 1;
+}
+
+.content-1 .img-cell-image,
+.grid-row:nth-of-type(1) li:nth-of-type(1) {
+  background: #000
+    url("https://raw.githubusercontent.com/calvinmorett/b16/main/first_grid/Untitled-3_01.gif")
+    no-repeat;
+  background-size: cover;
+}
+.content-2 .img-cell-image,
+.grid-row:nth-of-type(1) li:nth-of-type(2) {
+  background: #000
+    url("https://raw.githubusercontent.com/calvinmorett/b16/main/first_grid/Untitled-3_02.gif")
+    no-repeat;
+  background-size: cover;
+}
+.content-3 .img-cell-image,
+.grid-row:nth-of-type(1) li:nth-of-type(3) {
+  background: #000
+    url("https://raw.githubusercontent.com/calvinmorett/b16/main/first_grid/Untitled-3_03.gif")
+    no-repeat;
+  background-size: cover;
+}
+.content-4 .img-cell-image,
+.grid-row:nth-of-type(1) li:nth-of-type(4) {
+  background: #000
+    url("https://raw.githubusercontent.com/calvinmorett/b16/main/first_grid/Untitled-3_04.gif")
+    no-repeat;
+  background-size: cover;
+}
+
+.content-5 .img-cell-image,
+.grid-row:nth-of-type(2) li:nth-of-type(1) {
+  background: #000
+    url("https://raw.githubusercontent.com/calvinmorett/b16/main/first_grid/Untitled-3_05.gif")
+    no-repeat;
+  background-size: cover;
+}
+.content-6 .img-cell-image,
+.grid-row:nth-of-type(2) li:nth-of-type(2) {
+  background: #000
+    url("https://raw.githubusercontent.com/calvinmorett/b16/main/first_grid/Untitled-3_06.gif")
+    no-repeat;
+  background-size: cover;
+}
+.content-7 .img-cell-image,
+.grid-row:nth-of-type(2) li:nth-of-type(3) {
+  background: #000
+    url("https://raw.githubusercontent.com/calvinmorett/b16/main/first_grid/Untitled-3_07.gif")
+    no-repeat;
+  background-size: cover;
+}
+.content-8 .img-cell-image,
+.grid-row:nth-of-type(2) li:nth-of-type(4) {
+  background: #000
+    url("https://raw.githubusercontent.com/calvinmorett/b16/main/first_grid/Untitled-3_08.gif")
+    no-repeat;
+  background-size: cover;
+}
+
+.content-9 .img-cell-image,
+.grid-row:nth-of-type(3) li:nth-of-type(1) {
+  background: #000
+    url("https://raw.githubusercontent.com/calvinmorett/b16/main/first_grid/Untitled-3_09.gif")
+    no-repeat;
+  background-size: cover;
+}
+.content-10 .img-cell-image,
+.grid-row:nth-of-type(3) li:nth-of-type(2) {
+  background: #000
+    url("https://raw.githubusercontent.com/calvinmorett/b16/main/first_grid/Untitled-3_10.gif")
+    no-repeat;
+  background-size: cover;
+}
+.content-11 .img-cell-image,
+.grid-row:nth-of-type(3) li:nth-of-type(3) {
+  background: #000
+    url("https://raw.githubusercontent.com/calvinmorett/b16/main/first_grid/Untitled-3_11.gif")
+    no-repeat;
+  background-size: cover;
+}
+.content-12 .img-cell-image,
+.grid-row:nth-of-type(3) li:nth-of-type(4) {
+  background: #000
+    url("https://raw.githubusercontent.com/calvinmorett/b16/main/first_grid/Untitled-3_12.gif")
+    no-repeat;
+  background-size: cover;
+}
+
+.content-13 .img-cell-image,
+.grid-row:nth-of-type(4) li:nth-of-type(1) {
+  background: #000
+    url("https://raw.githubusercontent.com/calvinmorett/b16/main/first_grid/Untitled-3_13.gif")
+    no-repeat;
+  background-size: cover;
+}
+.content-14 .img-cell-image,
+.grid-row:nth-of-type(4) li:nth-of-type(2) {
+  background: #000
+    url("https://raw.githubusercontent.com/calvinmorett/b16/main/first_grid/Untitled-3_14.gif")
+    no-repeat;
+  background-size: cover;
+}
+.content-15 .img-cell-image,
+.grid-row:nth-of-type(4) li:nth-of-type(3) {
+  background: #000
+    url("https://raw.githubusercontent.com/calvinmorett/b16/main/first_grid/Untitled-3_15.gif")
+    no-repeat;
+  background-size: cover;
+}
+.content-16 .img-cell-image,
+.grid-row:nth-of-type(4) li:nth-of-type(4) {
+  background: #000
+    url("https://raw.githubusercontent.com/calvinmorett/b16/main/first_grid/Untitled-3_16.gif")
+    no-repeat;
+  background-size: cover;
+}
+.helpsection{
+  text-align:center;
+  padding:10px;
+  font-size:16px;
+}
+
+
+.display{
+	min-height:calc(80vh);
+	background:#222;
+	color:#fff;
+	padding:.5em;
+}
+ .img-container { 
+/*   display: grid;
+  width: 50vw;
+  min-height: 50vh;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr); */
+  width: 100%;
+  height: 100%;	
+  display: grid; 
+  grid-template-columns: 0.4fr 2.2fr 0.4fr; 
+  grid-template-rows: 0.4fr 2.2fr 0.4fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    ". . ."
+    ". . ."
+    ". . ."; 
+}
+
+.img-cell {
+  box-sizing: border-box;
+	text-align:center;
+}
+.img-cell-image{
+  width: calc(70vh);
+  height: calc(70vh);
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.img-cell-nav{ opacity:0; filter:invert(1); z-index:-1000;}
+.active,.img-cell-image{ opacity:1; z-index:1;}
+.img-cell-nav{
+  position: relative;
+  top: 50%;
+  height: 100px;
+  margin-top: -50px;
+  cursor:pointer;
+}
+.img-cell-nav img{height: 40px;}  
+
+
+
+// image editing stuff
+// * General styles for the page */ 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 25px 0 25px 0;
+  font-size: 40px;
+  text-align: center;
+}
+
+hr {
+  margin: 20px 0;
+}
+
+form {
+  text-align: center;
+}
+
+/* Styles for  URL box */ 
+
+.url-box {
+  background-color: transparent;
+  display: inline-block;
+  height: 30px;
+  border: none;
+  border-bottom: 4px solid #b3b3b1;
+  padding: 0px 0px 0px 20px;
+  margin: 0px 0px;
+  width: 50%;
+  outline: none;
+  text-align: center;
+  font-size: 15px;
+  font-family: monospace;
+  font-weight: 100;
+  color: #000;
+}
+
+#go {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  background-color: transparent;
+  padding: 0px;
+  border: 4px solid #b3b3b1;
+  border-radius: 50%;
+  box-shadow: none;
+  cursor: pointer;
+  outline: none;
+  font-size: 20px;
+  font-family: monospace;
+  font-weight: 100;
+  color: #000;
+}
+
+/* Styles for image container*/
+
+#imageContainer {
+  height:594px;
+  border-radius: 10px;
+  width: 911px;
+  margin:0 100px;
+  overflow:hidden;
+/*   background:url(https://i.imgur.com/btJcIrD.jpg); */
+}
+
+#imageContainer img {
+  border-radius: 0;
+}
+
+/* Styles for sliders*/
+
+.sliders {
+  position:absolute;
+  bottom:0;
+  right:0;
+  background:#111;
+  width:200px;
+  font-size: 12px;
+  font-weight: normal;
+  letter-spacing:1px;
+}
+
+.sliders p {
+  margin: 10px 0;
+  vertical-align: middle;
+}
+
+.sliders label {
+  display: inline-block;
+  margin: 5px 10px 0;
+  width: 190px;
+  color: #fff;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.sliders input {
+  position: relative;
+  margin: 5px 10px 0 10px;
+  vertical-align: middle;
+}
+
+input[type=range] {
+  /*removes default webkit styles*/
+  -webkit-appearance: none;
+  /*fix for FF unable to apply focus style bug */
+  border-radius: 15px;
+  /*required for proper track sizing in FF*/
+  width: 180px;
+  background:#000;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 190px;
+  height: 10px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 10px;
+  width: 10px;
+  border-radius: 100%;
+  vertical-align: middle;
+}
+input[type=range]:focus {
+  outline: none;
+  border-radius: 15px;
+  box-shadow:0 0 0 2px red;
+}
+input[type=range]:hover {
+	cursor: pointer;
+  border-radius: 15px;
+  box-shadow:0 0 0 2px red;
+}
+
+#reset {
+  display: inline-block;
+  height: 40px;
+  width: 100px;
+  background-color: transparent;
+  padding: 0px;
+  border: 1px solid #b3b3b1;
+  border-radius: 10px;
+  box-shadow: none;
+  cursor: pointer;
+  outline: none;
+  text-align: center;
+  color: #fff;
+  margin: 15px 0;
+}
+
+.p {
+  clear: both;
+  text-align: center;
+  padding:  20px 0 20px;
+}
+#imageEditor span{
+  background:#000;
+  color:#fff;
+  padding:2px 6px;
+  margin:0;
+}
